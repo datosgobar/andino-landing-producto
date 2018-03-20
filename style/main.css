@@ -32,6 +32,17 @@ h4 {
 }
 
 
+h2.herramientas {
+  font-weight: 100;
+  color: #FFFFFF;
+  position: absolute;
+    bottom: 8px;
+    left: 45px;
+}
+
+
+
+
 .andino-navbar {
   position: fixed;
   width: 200px;
@@ -61,7 +72,7 @@ h4 {
 }
 
 .button-main {
-  border: 1px solid white;
+  border: 1px solid #bcdbed;
   border-radius: 10px;
   padding: 15px 25px;
   background-color: transparent;
@@ -70,6 +81,7 @@ h4 {
   font-size: 20px;
   font-weight: 100;
   margin-top: 30px;
+  text-align: center;
 }
 
 /*
@@ -111,6 +123,15 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   background-color: white;
 }
 
+
+.bg-image-thumb-1 {
+   background-image:url(herramienta_1.png);
+   width: 480px;
+   height: 376px; 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 .container-fluid{
   margin-left: 210px;
 }
@@ -119,6 +140,15 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
 .content {
   width: 100vw;
   padding-left: 300px;
+}
+
+.thumbnail-2{
+  height: 340px;
+  width: 100%;
+}
+
+.row-up {
+  margin-bottom: 25px !important;
 }
 
 
@@ -177,3 +207,44 @@ text-align: center;
   justify-content: space-around;
   align-content: center;
 }
+
+.callto {
+  color: white;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.img-rrss {
+  width: 35px;
+}
+
+.li-rrss{
+  display: inline;
+}
+
+.ul-rrss {
+  display: inline;
+}
+
+.rrss {
+  position: relative;
+  bottom: -100px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 1422px) {
+
+.herramientas {
+    font-weight: 100;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 8px;
+    left: 45px;
+    font-size: 22px !important;
+}
+}
+
