@@ -1,271 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet">
 
-    <!--FAVICON --> 
-    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+        <!--FAVICON -->
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
 
-    <!-- BOOTSTRAP -->  
-    <link href="style/css/bootstrap.min.css" rel="stylesheet">
-    
+        <!-- BOOTSTRAP -->
+        <link href="style/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style/main.css">
-    <title>Andino</title>
-</head>
 
-<body>
-    <div class="andino-navbar" id="navbar">
+        <link rel="stylesheet" href="style/main.css">
+        <title>Andino</title>
+    </head>
 
-        <div class="logo">
-            <img src="img/logo-andino.svg">
-        </div>
+    <body>
+        <div class="andino-navbar" id="navbar">
 
-        <div class="button-container">
-            <button type="button" class="button">Inicio</button>
-            <button type="button" class="button">¿Qué es Andino?</button>
-            <button type="button" class="button">¿Para qué sirve Andino?</button>
-            <button type="button" class="button">¿Por qué Andino?</button>
-            <button type="button" class="button">Un ecosistema de herramientas útiles</button>
-            <button type="button" class="button">Empezá ahora</button>
-        </div>
-
-        <div >
-            <img class="logo-ministerio" src="img/logo-ministerio.svg">
-        </div>
-
-    </div>
-    <div class="main-container">
-
-        <!-- HOME -->
-        <div class="bg-image">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 vh65">
-                        <img class="andino-main img-responsive" src="img/andino-main.svg">
-                        <h1> El portal redistribuible de datos de la República Argentina.</h1>
-                        <button class="button-main">Empezá Ahora</button>
-                    </div>
-                </div>
+            <div class="logo">
+                <img src="img/logo-andino.svg">
             </div>
+
+            <div class="button-container">
+                <button id="button-cero" type="button" class="button">Inicio</button>
+                <button id="button-one" type="button" class="button">¿Qué es Andino?</button>
+                <button id="button-two" type="button" class="button">¿Para qué sirve Andino?</button>
+                <button id="button-three" type="button" class="button">¿Por qué Andino?</button>
+                <button id="button-four" type="button" class="button">Un ecosistema de herramientas útiles</button>
+                <button id="button-five" type="button" class="button">Empezá ahora</button>
+            </div>
+
+            <div>
+                <img class="logo-ministerio" src="img/logo-ministerio.svg">
+            </div>
+
         </div>
+        <div class="main-container">
 
-        <!-- QUE ES ANDINO 1 -->
-
-        <div class="bg-section">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <div class="centerelement">
-                            <div class="col-lg-8">
-
-                                <div class="center-title">
-                                    <h2>¿Qué es Andino?</h2>
-                                <h3 class="center-title-no-margin">Andino es un portal redistribuible desarrollado por el equipo de Datos Argentina
-                                para ayudar a los organismos del Estado en el proceso de apertura de sus datos.</h3>
-                                <img class="center-title" src="img/portal.png">
-                            </div>
+            <!-- HOME -->
+            <div id="sec0" class="bg-image">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 vh65">
+                            <img class="andino-main img-responsive" src="img/andino-main.svg">
+                            <h1> El portal redistribuible de datos de la República Argentina.</h1>
+                            <button class="button-main">Empezá Ahora</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-
-        <!-- QUE ES ANDINO 2 -->
-        <div class="bg-section">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <div class="centerelement">
-                            <div class="col-lg-8">
-
-                                <img class="center-title img-responsive" src="img/install.png">
-                                <div  class="center-title">
-                                    <h2>Fácil y rápido de instalar.</h2>
-                                    <h4>En simples pasos, el proceso de instalación es similar al de cualquier sistema portable, como un editor de fotos. Andino está desarrollado sobre la plataforma CKAN (elegida por los principales exponentes mundiales en materia de datos abiertos), pero con todo lo aprendido por el equipo de Datos Argentina sobre la apertura de datos en el ámbito local.
-                                    </h4>
+            <!-- QUE ES ANDINO 1 -->
+            <div id="sec1" style="overflow: hidden">
+                <div class="bg-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-8">
+                                        <div class="center-title">
+                                            <h2 class="listen">¿Qué es Andino?</h2>
+                                            <h3 class="center-title-no-margin listen">Andino es un portal redistribuible desarrollado por el equipo de Datos Argentina
+                                                para ayudar a los organismos del Estado en el proceso de apertura de sus
+                                                datos.
+                                            </h3>
+                                            <img class="center-title listen" src="img/portal.png">
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- QUE ES ANDINO 3 -->
-
-        <div class="bg-section">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <div class="centerelement">
-                           <div class="col-lg-6 col-sm-12">
 
 
-                            <div class="vh40">
-                                <h2>Intuitivo</h2>
-                                <h4> Trabajamos en la usabilidad del portal para que responda a las necesidades de los usuarios.
-                                    Así, no se trata de que quienes abran los datos se adapten al sistema, sino de que el sistema
-                                    pueda ofrecerles lo que necesitan al momento de trabajar. 
-                                </h4>
-                            </div>
+                <!-- QUE ES ANDINO 2 -->
+                <div class="bg-section">
+                    <div class="container-fluid">
+                        <div class="row">
 
-                        </div>
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-8">
 
-                        <div class="col-lg-6 col-sm-12">
-                            <!-- VER COMO HACER PARA QUE SE AGRANDE SEGUN LA PANTALLA -->
-                            <img class="intuitivo" src="img/intuitivo.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+                                        <img class="center-title img-responsive listen" src="img/install.png">
+                                        <div class="center-title">
+                                            <h2 class="listen">Fácil y rápido de instalar.</h2>
+                                            <h4 class="listen">En simples pasos, el proceso de instalación es similar al de cualquier sistema
+                                                portable, como un editor de fotos. Andino está desarrollado sobre la plataforma
+                                                CKAN (elegida por los principales exponentes mundiales en materia de datos
+                                                abiertos), pero con todo lo aprendido por el equipo de Datos Argentina sobre
+                                                la apertura de datos en el ámbito local.
+                                            </h4>
+                                        </div>
 
-
-    <!-- QUE ES ANDINO 4 -->
-
-    <div class="bg-section">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <div class="centerelement">
-                        <div class="col-lg-8">
-
-                            <div class="center-title">
-                                <h2>Personalizable.</h2>
-                                <h4>Para que cada organismo pueda adaptarlo a sus lineamientos y su identidad.
-                                Permite cambiar encabezados, textos, redes sociales y metadatos.</h4>
-                            </div>
-
-                            <img class="center-title img-responsive" src="img/Personalizable.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- PARA QUE SIRVE ANDINO -->
-    <div class="bg-section">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <div class="centerelement">
-                        <div class="col-lg-10">
-                            <div  class="left-title">
-                                <h2>¿Para qué sirve Andino?</h2>
-                                <h4>Andino es un portal de datos abiertos para facilitar el acceso y la documentación de los mismos por parte de los usuarios.
-                                </h4>
-                            </div>
-                            
-                            <img class="center-title img-responsive" src="img/para_que.png">
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- POR QUE ANDINO -->
-
-    <div class="bg-section">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <div class="centerelement">
-                        <div class="col-lg-10">
-                             <img class="center-img-no-margin img-responsive" src="img/pais.png">
-                            <div  class="center-title">
-                                <h2>¿Para qué sirve Andino?</h2>
-                                <h4>Todos los formularios de carga fueron diseñados para cumplir con el Perfil Nacional de Metadatos lo que facilita la integración entre los datos que abre cada organismo.</h4>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- UN ECOSISTEMA DE HERRAMIENTAS -->
-
-     <div class="bg-section">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <div class="centerelement">
-                        <div class="col-lg-10">
-                             <div class="row">
-                                <div  class="left-title">
-                                <h2>Un ecosistema de herramientas útiles</h2>
+                                    </div>
                                 </div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img class="img-responsive" src="img/herramienta_1.png"><h2 class="herramientas">Guía de uso</h2></div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img  class="img-responsive" src="img/herramienta_2.png"><h2 class="herramientas">Guía de instalación</h2></div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img class="img-responsive" src="img/herramienta_3.png"><h2 class="herramientas">Kit de Datos Abiertos</h2></div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img class="img-responsive" src="img/herramienta_5.png"><h2 class="herramientas">Paquete de Apertura</h2></div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img class="img-responsive" src="img/herramienta_4.png"><h2 class="herramientas">Pydatajson</h2></div>
-                                 <div class="col-lg-4 col-sm-6 col-xs-12 row-up"><img class="img-responsive" src="img/herramienta_6.png"><h2 class="herramientas">A revisar (?)</h2></div>
-                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- QUE ES ANDINO 3 -->
+
+                <div class="bg-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="vh40">
+                                            <h2 class="listen">Intuitivo</h2>
+                                            <h4 class="listen"> Trabajamos en la usabilidad del portal para que responda a las necesidades de
+                                                los usuarios. Así, no se trata de que quienes abran los datos se adapten
+                                                al sistema, sino de que el sistema pueda ofrecerles lo que necesitan al momento
+                                                de trabajar.
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-12">
+                                        <!-- VER COMO HACER PARA QUE SE AGRANDE SEGUN LA PANTALLA -->
+                                        <img class="intuitivo listen" src="img/intuitivo.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- QUE ES ANDINO 4 -->
+
+                <div class="bg-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-8">
+                                        <div class="center-title">
+                                            <h2 class="listen">Personalizable.</h2>
+                                            <h4 class="listen">Para que cada organismo pueda adaptarlo a sus lineamientos y su identidad. Permite
+                                                cambiar encabezados, textos, redes sociales y metadatos.</h4>
+                                        </div>
+
+                                        <img class="center-title img-responsive listen" src="img/Personalizable.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PARA QUE SIRVE ANDINO -->
+            <div id="sec2">
+                <div class="bg-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-10">
+                                        <div class="left-title">
+                                            <h2 class="listen">¿Para qué sirve Andino?</h2>
+                                            <h4 class="listen">Andino es un portal de datos abiertos para facilitar el acceso y la documentación
+                                                de los mismos por parte de los usuarios.
+                                            </h4>
+                                        </div>
+
+                                        <img class="center-title img-responsive listen" src="img/para_que.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POR QUE ANDINO -->
+
+            <div id="sec3" class="bg-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="centerelement">
+                                <div class="col-lg-10">
+                                    <img class="center-img-no-margin img-responsive listen" src="img/pais.png">
+                                    <div class="center-title">
+                                        <h2 class="listen">¿Por qué Andino?</h2>
+                                        <h4 class="listen">Todos los formularios de carga fueron diseñados para cumplir con el Perfil Nacional
+                                            de Metadatos lo que facilita la integración entre los datos que abre cada organismo.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- UN ECOSISTEMA DE HERRAMIENTAS -->
+
+            <div id="sec4" class="bg-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="centerelement">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="left-title listen">
+                                            <h2>Un ecosistema de herramientas útiles</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_1.png">
+                                            <h2 class="herramientas">Guía de uso</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_2.png">
+                                            <h2 class="herramientas">Guía de instalación</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_3.png">
+                                            <h2 class="herramientas">Kit de Datos Abiertos</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_5.png">
+                                            <h2 class="herramientas">Paquete de Apertura</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_4.png">
+                                            <h2 class="herramientas">Pydatajson</h2>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen">
+                                            <img class="img-responsive" src="img/herramienta_6.png">
+                                            <h2 class="herramientas">A revisar (?)</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CALL TO ACTION -->
+            <div id="sec5" class="bg-image">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 centerelement vh40 ">
+                            <div>
+                                <h2 class="callto">Empezá ahora</h2>
+                                <h3 class="callto">y abrí tus datos con Andino.</h3>
+                                <div class="button-main">Ir a XXXXXXX</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row rrss">
+
+                        <div class="centerelement">
+                            <ul class="ul-rrss">
+                                <li class="li-rrss">
+                                    <a href="https://twitter.com/datosgobar" target="_blank">
+                                        <img class="img-rrss" src="img/twitter.svg">
+                                    </a>
+                                </li>
+                                <!--  <li class="li-rrss"><a href=""><img class="img-rrss" src="img/facebook.svg"></li> -->
+                                <li class="li-rrss">
+                                    <a href="https://github.com/datosgobar/">
+                                        <img class="img-rrss" src="img/github.svg">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-  <!-- CALL TO ACTION -->
-        <div class="bg-image">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 centerelement vh40">
-                        
-                        <div>
-                        <h2 class="callto">Empezá ahora</h2>
-                        <h3 class="callto">y abrí tus datos con Andino.</h3>
-                        <div class="button-main">Ir a XXXXXXX</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row rrss">
-
-                    <div class="centerelement">
-                    <ul class="ul-rrss">
-                        <li class="li-rrss"><a href="https://twitter.com/datosgobar" target="_blank"><img class="img-rrss" src="img/twitter.svg"></a></li>
-                       <!--  <li class="li-rrss"><a href=""><img class="img-rrss" src="img/facebook.svg"></li> -->
-                        <li class="li-rrss"><a href="https://github.com/datosgobar/"><img class="img-rrss" src="img/github.svg"></a></li>
-                    </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-</div>
-</body>
+        <!-- SCRIPTS -->
+        <!-- call to JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <!-- call to library for controlling GIF animation -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <!-- call to controller script -->
+        <script src="./js/main.js"></script>
+    </body>
 
 </html>
