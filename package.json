@@ -1,0 +1,22 @@
+{
+  "name": "andino-landing-producto",
+  "version": "0.0.1",
+  "description": "Node para andino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datosgobar/andino-landing-producto.git"
+  },
+  "author": "Datos.gob.ar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datosgobar/andino-landing-producto/issues"
+  },
+  "homepage": "https://github.com/datosgobar/andino-landing-producto#readme",
+  "dependencies": {
+    "lottie-web": "^5.1.9"
+  }
+}

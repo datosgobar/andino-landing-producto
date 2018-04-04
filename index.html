@@ -16,6 +16,8 @@
 
 
         <link rel="stylesheet" href="style/main.css">
+
+        <script src="node_modules/lottie-web/build/player/lottie.js"></script>
         <title>Andino</title>
     </head>
 
@@ -88,7 +90,17 @@
                                 <div class="centerelement">
                                     <div class="col-lg-8">
 
-                                        <img class="center-title img-responsive listen" src="img/install.png">
+                                        <script> var svgContainer = document.getElementById('svgContainer'); var animItem = bodymovin.loadAnimation({
+                                            wrapper: svgContainer,
+                                            animType: 'svg',
+                                            loop: true,
+                                            autoplay: true,
+                                            path: 'file:///Users/datos/Desktop/Work/Code/andino-landing-producto/quickandeasy.json'
+                                        });</script>
+
+
+
+
                                         <div class="center-title">
                                             <h2 class="listen">Fácil y rápido de instalar.</h2>
                                             <h4 class="listen">En simples pasos, el proceso de instalación es similar al de cualquier sistema
@@ -294,6 +306,7 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
         <!-- call to controller script -->
         <script src="./js/main.js"></script>
+
     </body>
 
 </html>
