@@ -251,6 +251,12 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   transform: scale(1.05);
 }
 
+
+.quickanimation {
+  max-width: 730px;
+  margin: auto;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1422px) {
   .herramientas {
