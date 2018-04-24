@@ -44,10 +44,11 @@ h2.herramientas {
 
 .andino-navbar {
   position: fixed;
-  width: 200px;
+  width: 205px;
   background-color: white;
   height: 100vh;
   z-index: 2;
+  padding-right: 9px;
 }
 
 .button-container {
@@ -246,15 +247,25 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
 
 .active {
   transition: all ease-in-out 300ms;
-  border-bottom: 2px solid steelblue;
-  border-top: 2px solid steelblue;
+  border-bottom: 1px solid #073f69;
+  border-top: 1px solid #073f69;
   transform: scale(1.05);
+  font-weight: 600;
+  color: #073f69;
+  padding-top: 4px;
 }
 
 
 .quickanimation {
   max-width: 730px;
   margin: auto;
+}
+/* TRIGGER ANIMATION */
+.listen-animation {
+  opacity: 0;
+}
+.start-animation {
+  opacity: 1;
 }
 
 /*MEDIA QUERIES*/
