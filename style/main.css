@@ -146,6 +146,10 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   margin-bottom: 25px !important;
 }
 
+.title-down {
+  margin-bottom: 60px !important;
+}
+
 .vh65 {
   margin-top: 65vh;
 }
@@ -255,9 +259,19 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   padding-top: 4px;
 }
 
-
 .quickanimation {
   max-width: 730px;
+  margin: auto;
+}
+
+.paisanimation {
+  max-width: 625px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.paraqueanimation {
+  max-width: 950px;
   margin: auto;
 }
 /* TRIGGER ANIMATION */
