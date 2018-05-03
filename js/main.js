@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Init ScrollMagic
   var controller = new ScrollMagic.Controller()
 
   // loop through each .listen element
-  $('.listen').each(function() {
+  $('.listen').each(function () {
     // buld a scene
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this,
@@ -12,9 +12,9 @@ $(document).ready(function() {
       triggerHook: 0.8,
     })
       .setClassToggle(this, 'fade-in') // add class 'fade-in' to elements with class 'listen'
-        // .addIndicators({
-        //   name: 'fade in',
-        // })
+      // .addIndicators({
+      //   name: 'fade in',
+      // })
       .addTo(controller)
   })
 
@@ -44,53 +44,53 @@ $(document).ready(function() {
 
   // loop through each .listen element
   // PRIMERA ANIMACION
-  $('.listen-animation').each(function() {
+  $('.listen-animation').each(function () {
     // buld a scene
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this,
       //duration: '90%',
-        reverse: false,
+      reverse: false,
       triggerHook: 0.8,
     })
 
       .setClassToggle(this, 'start-animation') // add class 'fade-in' to elements with class 'listen'
-        .addIndicators({
-          name: 'fade in',
-        })
+      .addIndicators({
+        name: 'fade in',
+      })
       .on('start', function () {
-          var svgContainer = document.getElementById('quickandeasy');
-          var autoplay = true
-          var animItem = lottie.loadAnimation({
-              wrapper: svgContainer,
-              animType: 'svg',
-              loop: false,
-              autoplay: autoplay,
-              path: 'https://gist.githubusercontent.com/capitantoto/f60541813fe76b09ad9f61a2d111bb24/raw/99754d0d52df5de1f0b5ccfe455530f64153179a/quickandeasy.json'
-          });
+        var svgContainer = document.getElementById('quickandeasy');
+        var autoplay = true
+        var animItem = lottie.loadAnimation({
+          wrapper: svgContainer,
+          animType: 'svg',
+          loop: false,
+          autoplay: autoplay,
+          path: 'https://gist.githubusercontent.com/capitantoto/f60541813fe76b09ad9f61a2d111bb24/raw/99754d0d52df5de1f0b5ccfe455530f64153179a/quickandeasy.json'
+        });
       })
       .addTo(controller)
   })
   // SEGUNDA ANIMACION
-  $('.listen-animation-two').each(function() {
+  $('.listen-animation-two').each(function () {
     // buld a scene
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this,
       //duration: '90%',
-        reverse: false,
+      reverse: false,
       triggerHook: 0.8,
     })
 
       .setClassToggle(this, 'start-animation') // add class 'fade-in' to elements with class 'listen'
-        .addIndicators({
-          name: 'fade in',
-        })
+      .addIndicators({
+        name: 'fade in',
+      })
       .on('start', function () {
         var svgContainer = document.getElementById('prototype'); var animItem = lottie.loadAnimation({
-            wrapper: svgContainer,
-            animType: 'svg',
-            loop: false,
-            autoplay: true,
-            path: 'https://gist.githubusercontent.com/sebasbarraud/d77d0ffbf6a5e476863330aa190d38a9/raw/a012d956f42689612211f7a7e983bd8c027d5cd5/prototype.json'
+          wrapper: svgContainer,
+          animType: 'svg',
+          loop: false,
+          autoplay: true,
+          path: 'https://gist.githubusercontent.com/sebasbarraud/d77d0ffbf6a5e476863330aa190d38a9/raw/a012d956f42689612211f7a7e983bd8c027d5cd5/prototype.json'
         });
         setTimeout(() => {
           lottie.pause()
@@ -98,8 +98,59 @@ $(document).ready(function() {
       })
       .addTo(controller)
   })
+  // TERCER ANIMACIÓN
+  $('.listen-animation-three').each(function () {
+    // buld a scene
+    var ourScene = new ScrollMagic.Scene({
+      triggerElement: this,
+      //duration: '90%',
+      reverse: false,
+      triggerHook: 0.8,
+    })
+
+      .setClassToggle(this, 'start-animation') // add class 'fade-in' to elements with class 'listen'
+      .addIndicators({
+        name: 'fade in',
+      })
+      .on('start', function () {
+        var svgContainer = document.getElementById('paraque'); var animItem = lottie.loadAnimation({
+          wrapper: svgContainer,
+          animType: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'https://gist.githubusercontent.com/sebasbarraud/5e7bccb8618635d4376f91d0f5e3b470/raw/696723c54ad2d2fdbd11753177bae947a2cb1eae/paraque.json'
+        });
+      })
+      .addTo(controller)
+  })
+
+  // CUARTA ANIMACION
+  $('.listen-animation-four').each(function () {
+    // buld a scene
+    var ourScene = new ScrollMagic.Scene({
+      triggerElement: this,
+      //duration: '90%',
+      reverse: false,
+      triggerHook: 0.8,
+    })
+
+      .setClassToggle(this, 'start-animation') // add class 'fade-in' to elements with class 'listen'
+      .addIndicators({
+        name: 'fade in',
+      })
+      .on('start', function () {
+        var svgContainer = document.getElementById('pais'); var animItem = lottie.loadAnimation({
+          wrapper: svgContainer,
+          animType: 'svg',
+          loop: false,
+          autoplay: true,
+          path: 'https://gist.githubusercontent.com/sebasbarraud/61822a1017fea082a5b6f9a6956cab86/raw/db67fb527d33890f3809ddf22c0027505bcbdf18/pais.json'
+        });
+      })
+      .addTo(controller)
+  })
+
+})
 
 
-
-
-}) // document ready ends
+// document ready ends
