@@ -230,6 +230,23 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
 }
 
 /* SCROLL ANIMATIONS */
+
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Could Use thise as well for Individual Controls */
+video::-webkit-media-controls-play-button {}
+
+video::-webkit-media-controls-volume-slider {}
+
+video::-webkit-media-controls-mute-button {}
+
+video::-webkit-media-controls-timeline {}
+
+video::-webkit-media-controls-current-time-display {}
+
 .listen {
   opacity: 0;
   transition: all ease-in-out 300ms;
@@ -276,6 +293,12 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
     padding-top: 100px;
 }
 
+.andinoanimation {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 100px;
+}
+
 .paraqueanimation {
   max-width: 950px;
   margin: auto;
@@ -287,6 +310,12 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
 .start-animation {
   opacity: 1;
 }
+
+.img-links:hover {
+   opacity: 0.5;
+   transition-duration: 0.5s;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1422px) {
