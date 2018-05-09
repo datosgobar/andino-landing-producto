@@ -82,6 +82,22 @@ h2.herramientas {
   font-weight: 100;
   margin-top: 30px;
   text-align: center;
+  max-width: 185px;
+}
+
+.button-main-margin-center {
+    margin:auto;
+    margin-top: 30px;
+    max-width: 260px;
+}
+
+.button-main:hover {
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /*
@@ -314,7 +330,10 @@ video::-webkit-media-controls-current-time-display {}
 .img-links:hover {
    opacity: 0.5;
    transition-duration: 0.5s;
+   text-decoration: none;
 }
+
+
 
 
 /*MEDIA QUERIES*/
