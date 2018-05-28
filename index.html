@@ -15,6 +15,7 @@
         <link href="style/css/bootstrap.min.css" rel="stylesheet">
 
 
+
         <link rel="stylesheet" href="style/main.css">
 
         <script src="node_modules/lottie-web/build/player/lottie.js" type="text/javascript"></script>
@@ -22,19 +23,73 @@
     </head>
 
     <body>
-        <div class="andino-navbar" id="navbar">
+        <!-- MODAL CONTACTO -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog centermodal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Contactanos</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+
+
+                        <div class="form-group col-md-12">
+                            <label for="inputName">Nombre</label>
+                            <input type="name" class="form-control" id="inputName" placeholder="Nombre">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="inputPosition">¿De qué organismo sos?</label>
+                            <input type="text" class="form-control" id="inputPosition" placeholder="Ingresá tu puesto acá">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="inputMessage">Consulta</label>
+                            <input type="text" class="form-control" id="inputMessage" placeholder="Ingresá tu consulta acá">
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modal-button-back" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary modal-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="andino-navbar hidden-xs" id="navbar">
 
             <div class="logo">
                 <img src="img/logo-andino.svg">
             </div>
 
             <div class="button-container">
-                <button id="button-cero" type="button" class="button">Inicio</button>
-                <button id="button-one" type="button" class="button">¿Qué es Andino?</button>
-                <button id="button-two" type="button" class="button">¿Para qué sirve Andino?</button>
-                <button id="button-three" type="button" class="button">¿Por qué Andino?</button>
-                <button id="button-four" type="button" class="button">Un ecosistema de herramientas útiles</button>
-                <button id="button-five" type="button" class="button">Empezá ahora</button>
+                <button id="button-cero" type="button" class="button" onClick="document.getElementById('sec0').scrollIntoView({behavior: 'smooth',});">Inicio</button>
+
+                <button id="button-one" type="button" class="button" onClick="document.getElementById('sec1').scrollIntoView({behavior: 'smooth', block: 'start' });">¿Qué es Andino?</button>
+
+                <button id="button-two" type="button" class="button" onClick="document.getElementById('sec2').scrollIntoView({behavior: 'smooth',});">¿Para qué sirve Andino?</button>
+
+                <button id="button-three" type="button" class="button" onClick="document.getElementById('sec3').scrollIntoView({behavior: 'smooth',});">¿Por qué Andino?</button>
+
+                <button id="button-four" type="button" class="button" onClick="document.getElementById('sec4').scrollIntoView({behavior: 'smooth',});">Un ecosistema de herramientas útiles</button>
+
+                <button id="button-five" type="button" class="button" onClick="document.getElementById('sec5').scrollIntoView({behavior: 'smooth',});">Empezá ahora</button>
             </div>
 
             <div>
@@ -42,16 +97,64 @@
             </div>
 
         </div>
+
+        <!--NAVBAR MOBILE-->
+        <nav class="navbar navbar-default visible-xs">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="logo-andino" src="img/logo-andino.svg">
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#sec0" onClick="document.getElementById('sec0').scrollIntoView({behavior: 'smooth', block: 'start' });">Inicio</a>
+                        </li>
+                        <li>
+                            <a onClick="document.getElementById('sec1').scrollIntoView({behavior: 'smooth', block: 'start' });">¿Qué es Andino?</a>
+                        </li>
+                        <li>
+                            <a onClick="document.getElementById('sec2').scrollIntoView({behavior: 'smooth', block: 'start' });">¿Para qué sirve Andino?</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="document.getElementById('sec3').scrollIntoView({behavior: 'smooth', block: 'start' });">¿Por qué Andino?</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="document.getElementById('sec4').scrollIntoView({behavior: 'smooth', block: 'start' });">Un ecosistema de herramientas útiles</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="document.getElementById('sec5').scrollIntoView({behavior: 'smooth', block: 'start' });">Empezá ahora</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
         <div class="main-container">
+
 
             <!-- HOME -->
             <div id="sec0" class="bg-image">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 vh65">
+                        <div class="col-xs-10 col-xs-offset-1 col-lg-12 vh65 vh30">
                             <img class="andino-main img-responsive" src="img/andino-main.svg">
                             <h1> El portal redistribuible de datos de la República Argentina.</h1>
-                            <a href="http://portal-andino.readthedocs.io"><div class="button-main">Empezá ahora</div></a>
+                            <a href="http://portal-andino.readthedocs.io">
+                                <div class="button-main">Empezá ahora</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -64,16 +167,18 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="centerelement">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-8 col-xs-12">
                                         <div class="center-title">
-                                            <h2 class="listen">¿Qué es Andino?</h2>
+                                            <h2 class="listen  listen-video">¿Qué es Andino?</h2>
                                             <h3 class="center-title-no-margin listen">Andino es un portal redistribuible desarrollado por el equipo de Datos Argentina
                                                 para ayudar a los organismos del Estado en el proceso de apertura de sus
                                                 datos.
                                             </h3>
-                                            <video class="andinoanimation" width="898" height="376" autoplay="autoplay" >
-           										 <source src="video/andinos2.mp4" type="video/mp4" />
-        									</video>
+                                            <!-- <video class="andinoanimation" width="898" height="376" autoplay="autoplay">
+                                                <source src="./video/andinos2.mp4" type="video/mp4">
+                                            </video> -->
+
+                                            <img class="img-responsive mt75 mlrauto" src="img/andinos2.gif">
 
 
                                         </div>
@@ -96,11 +201,10 @@
                                         <div id="quickandeasy" class="quickanimation listen-animation"></div>
                                         <div class="center-title">
                                             <h2 class="listen">Fácil y rápido de instalar.</h2>
-                                            <h4 class="listen">En simples pasos, el proceso de instalación es similar al de cualquier sistema
-                                                portable, como un editor de fotos. Andino está desarrollado sobre la plataforma
-                                                CKAN (elegida por los principales exponentes mundiales en materia de datos
-                                                abiertos), pero con todo lo aprendido por el equipo de Datos Argentina sobre
-                                                la apertura de datos en el ámbito local.
+                                            <h4 class="listen">En simples pasos podes tener tu propio portal de datos abiertos. Andino está
+                                                desarrollado sobre CKAN, la plataforma elegida por los principales exponentes
+                                                mundiales en materia de datos abiertos, y adaptada a la experiencia de apertura
+                                                de datos en el ámbito local.
                                             </h4>
                                         </div>
 
@@ -119,7 +223,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="centerelement">
-                                    <div class="col-lg-6 col-sm-12">
+                                    <div class="col-lg-6 col-sm-12 hidden-xs hidden-sm">
                                         <div class="vh40">
                                             <h2 class="listen">Intuitivo</h2>
                                             <h4 class="listen"> Trabajamos en la usabilidad del portal para que responda a las necesidades de
@@ -130,12 +234,39 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-sm-12">
+                                    <div class="col-lg-6 col-sm-12 col-xs-12 hidden-xs">
                                         <!-- VER COMO HACER PARA QUE SE AGRANDE SEGUN LA PANTALLA -->
-                                        <div id="prototype" class="intuitivo listen listen-animation-two"></div>
+                                        <div id="prototype" class="intuitivo listen listen-animation-two listen-animation-three"></div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <!-- VERSION MOBILE -->
+
+
+
+                                <div class="col-xs-12 visible-xs">
+
+                                    <img class="img-responsive visible-xs title-down" src="img/intuitivo.jpg">
+
+                                </div>
+
+                                <div class="visible-xs">
+                                    <div>
+                                        <h2 class="listen">Intuitivo</h2>
+                                        <h4 class="listen"> Trabajamos en la usabilidad del portal para que responda a las necesidades de los
+                                            usuarios. Así, no se trata de que quienes abran los datos se adapten al sistema,
+                                            sino de que el sistema pueda ofrecerles lo que necesitan al momento de trabajar.
+                                        </h4>
                                     </div>
                                 </div>
+
+
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -155,17 +286,37 @@
                                                 cambiar encabezados, textos, redes sociales y metadatos.</h4>
                                         </div>
 
-                                        <div id="compu" class="compuanimation">
-                                            <script> var svgContainer = document.getElementById('compu'); var animItem = lottie.loadAnimation({
-                                                    wrapper: svgContainer,
-                                                    animType: 'svg',
-                                                    loop: true,
-                                                    autoplay: true,
-                                                    path: 'https://gist.githubusercontent.com/sebasbarraud/e3f40e2f19871489e746d7fee3dd75eb/raw/6fb9cd7762959794784c6b3f1fa84c1b5bc352c8/compu.json'
-                                                });</script>
+                                        <div class="compuanimation">
+                                            <img class="compu-img" src="img/pantalla.gif" </div>
+
+
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
 
+                <!-- PARA QUE SIRVE ANDINO -->
+                <div id="sec2">
+                    <div class="bg-section">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="centerelement">
+                                        <div class="col-lg-10">
+                                            <div class="left-title">
+                                                <h2 class="listen">¿Para qué sirve Andino?</h2>
+                                                <h4 class="listen">Andino es un portal diseñado para facilitar el proceso de publicación, nevegación
+                                                    y descarga de los datos que abren los organismos.
+                                                </h4>
+                                            </div>
+                                            <div id="paraque" class="paraqueanimation mt75 mlrauto">
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -173,157 +324,152 @@
                     </div>
                 </div>
 
-            </div>
-
-            <!-- PARA QUE SIRVE ANDINO -->
-            <div id="sec2">
-                <div class="bg-section">
+                <!-- POR QUE ANDINO -->
+                <div id="sec3" class="bg-section">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="centerelement">
                                     <div class="col-lg-10">
-                                        <div class="left-title">
-                                            <h2 class="listen">¿Para qué sirve Andino?</h2>
-                                            <h4 class="listen">Andino es un portal de datos abiertos para facilitar el acceso y la documentación
-                                                de los mismos por parte de los usuarios.
-                                            </h4>
+                                        <div id="pais" class="paisanimation listen-animation-four">
+
                                         </div>
-                                        <div id="paraque" class="paraqueanimation listen-animation-three"></div>
+
+                                        <div class="center-title">
+                                            <h2 class="listen">¿Por qué Andino?</h2>
+                                            <h4 class="listen">Porque evoluciona junto con la política de apertura de datos y te facilita cumplir
+                                                con el Perfil Nacional de Metadatos. Además, ¡es fácil de instalar!</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- POR QUE ANDINO -->
-            <div id="sec3" class="bg-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="centerelement">
-                                <div class="col-lg-10">
-                                    <div id="pais" class="paisanimation listen-animation-four">
-
-                                    </div>
-
-                                    <div class="center-title">
-                                        <h2 class="listen">¿Por qué Andino?</h2>
-                                        <h4 class="listen">Todos los formularios de carga fueron diseñados para cumplir con el Perfil Nacional
-                                            de Metadatos lo que facilita la integración entre los datos que abre cada organismo.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
 
-            <!-- UN ECOSISTEMA DE HERRAMIENTAS -->
+                <!-- UN ECOSISTEMA DE HERRAMIENTAS -->
 
-            <div id="sec4" class="bg-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="centerelement">
-                                <div class="col-lg-10">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="left-title listen">
-                                                <h2 class="title-down">Un ecosistema de herramientas útiles</h2>
+                <div id="sec4" class="bg-section-tools">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="centerelement">
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="left-title listen">
+                                                    <h2 class="title-down">Un ecosistema de herramientas</h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="http://portal-andino.readthedocs.io/es/master/quickstart/" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_1.png">
+                                                    <h2 class="herramientas">Guía de uso</h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="http://paquete-apertura-datos.readthedocs.io" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_5.png">
+                                                    <h2 class="herramientas">Guías de buenas prácticas</h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_3.png">
+                                                    <h2 class="herramientas">Kit de Datos Abiertos</h2>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="http://portal-andino.readthedocs.io" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_2.png">
+                                                    <h2 class="herramientas">Documentación</h2>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="https://pydatajson.readthedocs.io" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_4.png">
+                                                    <h2 class="herramientas">Pydatajson</h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
+                                                <a href="https://github.com/datosgobar/data-cleaner" target="_blank">
+                                                    <img class="img-responsive" src="img/herramienta_6.png">
+                                                    <h2 class="herramientas">Data Cleaner</h2>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="http://portal-andino.readthedocs.io/es/master/quickstart/" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_1.png">
-                                            <h2 class="herramientas">Guía de uso</h2>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="http://portal-andino.readthedocs.io" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_2.png">
-                                            <h2 class="herramientas">Documentación</h2>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="https://www.argentina.gob.ar/sites/default/files/2._kit_de_datos_abiertos.pdf" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_3.png">
-                                            <h2 class="herramientas">Kit de Datos Abiertos</h2>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="http://paquete-apertura-datos.readthedocs.io" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_5.png">
-                                            <h2 class="herramientas">Paquete de Apertura</h2>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="https://pydatajson.readthedocs.io" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_4.png">
-                                            <h2 class="herramientas">Pydatajson</h2>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 col-xs-12 row-up listen img-links">
-                                            <a href="https://github.com/datosgobar/data-cleaner" target="_blank">
-                                            <img class="img-responsive" src="img/herramienta_6.png">
-                                            <h2 class="herramientas">Data Cleaner</h2>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- CALL TO ACTION -->
-            <div id="sec5" class="bg-image">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 centerelement vh40 ">
-                            <div>
-                                <h2 class="callto">Empezá ahora</h2>
-                                <h3 class="callto">y abrí tus datos con Andino.</h3>
-                                <a href="http://portal-andino.readthedocs.io"><div class="button-main button-main-margin-center">Ir a la documentación</div></a>
+                <!-- CALL TO ACTION -->
+                <div id="sec5" class="bg-image">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 centerelement vh40 ">
+                                <div>
+                                    <h2 class="callto">Empezá ahora</h2>
+                                    <h3 class="callto">y abrí tus datos con Andino.</h3>
+
+                                    <div class="col-lg-7">
+                                        <a href="http://portal-andino.readthedocs.io">
+                                            <div class="button-main button-main-margin-center">Ir a la documentación</div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-5">
+                                        <button type="button" class="button-main button-main-margin-center" data-toggle="modal" data-target="#myModal">
+                                            Contactanos
+                                        </button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row rrss">
+                        <div class="row rrss">
 
-                        <div class="centerelement">
-                            <ul class="ul-rrss">
-                                <li class="li-rrss">
-                                    <a href="https://twitter.com/datosgobar" target="_blank">
-                                        <img class="img-rrss" src="img/twitter.svg">
-                                    </a>
-                                </li>
-                                <!--  <li class="li-rrss"><a href=""><img class="img-rrss" src="img/facebook.svg"></li> -->
-                                <li class="li-rrss">
-                                    <a href="https://github.com/datosgobar/">
-                                        <img class="img-rrss" src="img/github.svg">
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="centerelement">
+                                <ul class="ul-rrss">
+                                    <li class="li-rrss">
+                                        <a href="https://twitter.com/datosgobar" target="_blank">
+                                            <img class="img-rrss" src="img/twitter.svg">
+                                        </a>
+                                    </li>
+                                    <!--  <li class="li-rrss"><a href=""><img class="img-rrss" src="img/facebook.svg"></li> -->
+                                    <li class="li-rrss">
+                                        <a href="https://github.com/datosgobar/">
+                                            <img class="img-rrss" src="img/github.svg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- SCRIPTS -->
-        <!-- call to JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-        <!-- call to library for controlling GIF animation -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-        <!-- call to controller script -->
-        <script src="./js/main.js"></script>
+            <!-- SCRIPTS -->
+            <!-- call to JQUERY -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+            <!-- call to library for controlling GIF animation -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+            <!-- call to controller script -->
+            <script src="./js/main.js"></script>
+
+
+
 
     </body>
 

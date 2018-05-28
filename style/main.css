@@ -4,6 +4,14 @@ html {
   width: 100vw;
 }
 
+.modal-backdrop {
+  display: none;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +77,7 @@ h2.herramientas {
   font-weight: 300;
   text-align: left;
   font-size: 15px;
+  background-color: white;
 }
 
 .button-main {
@@ -86,9 +95,9 @@ h2.herramientas {
 }
 
 .button-main-margin-center {
-    margin:auto;
-    margin-top: 30px;
-    max-width: 260px;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 260px;
 }
 
 .button-main:hover {
@@ -97,7 +106,7 @@ h2.herramientas {
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*
@@ -120,8 +129,12 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   width: 100%;
   height: 5000px;
   z-index: 0;
+  overflow-x: hidden;
 }
 
+button {
+  outline: none;
+}
 .bg-image {
   background-image: url(bg-inicio.jpg);
   width: 100vw;
@@ -134,6 +147,12 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   width: 100vw;
   height: 100vh;
   background-color: white;
+}
+
+.bg-section-tools {
+  width: 100vw;
+  background-color: white;
+  margin-bottom: 300px;
 }
 
 .bg-image-thumb-1 {
@@ -185,6 +204,15 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   margin-top: 15vh;
 }
 
+.mt75 {
+  margin-top: 75px !important;
+}
+
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo {
   padding: 25px;
 }
@@ -222,6 +250,39 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   align-content: center;
 }
 
+.centermodal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal-button {
+  border: solid 1px #073f69;
+  margin-bottom: 10px !important;
+  margin: 5px;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 15px;
+  background-color: #073f69;
+  padding: 10px 25px !important;
+}
+
+.modal-button-back {
+  border: solid 1px #073f69;
+  margin-bottom: 10px !important;
+  margin: 5px;
+  color: #073f69;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 15px;
+  background-color: white;
+  padding: 10px 25px !important;
+}
+
 .callto {
   color: white;
   text-align: center;
@@ -247,21 +308,25 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
 
 /* SCROLL ANIMATIONS */
 
-
 video::-webkit-media-controls {
   display: none;
 }
 
 /* Could Use thise as well for Individual Controls */
-video::-webkit-media-controls-play-button {}
+video::-webkit-media-controls-play-button {
+}
 
-video::-webkit-media-controls-volume-slider {}
+video::-webkit-media-controls-volume-slider {
+}
 
-video::-webkit-media-controls-mute-button {}
+video::-webkit-media-controls-mute-button {
+}
 
-video::-webkit-media-controls-timeline {}
+video::-webkit-media-controls-timeline {
+}
 
-video::-webkit-media-controls-current-time-display {}
+video::-webkit-media-controls-current-time-display {
+}
 
 .listen {
   opacity: 0;
@@ -304,9 +369,14 @@ video::-webkit-media-controls-current-time-display {}
 }
 
 .compuanimation {
-    max-width: 750px;
-    margin: auto;
-    padding-top: 100px;
+  max-width: 750px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.compu-img {
+  display: block;
+  margin: auto;
 }
 
 .andinoanimation {
@@ -328,13 +398,24 @@ video::-webkit-media-controls-current-time-display {}
 }
 
 .img-links:hover {
-   opacity: 0.5;
-   transition-duration: 0.5s;
-   text-decoration: none;
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  text-decoration: none;
 }
 
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: none !important;
+}
 
-
+.modal {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+/* video {
+  width: 100% !important;
+  height: auto !important;
+} */
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1422px) {
@@ -345,5 +426,63 @@ video::-webkit-media-controls-current-time-display {}
     bottom: 8px;
     left: 45px;
     font-size: 22px !important;
+  }
+
+  .bg-section-tools {
+    width: 100vw;
+    background-color: white;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    margin: auto;
+  }
+
+  .logo-andino {
+    width: 150px;
+    padding: 15px;
+  }
+  .navbar {
+    margin-bottom: 0px !important;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #073f69 !important;
+  }
+  .vh30 {
+    margin-top: 30vh;
+  }
+  .vh20 {
+    margin-top: 20vh;
+  }
+
+  .vh38 {
+    margin-top: 38vh;
+  }
+
+  .bg-section-tools {
+    width: 100vw;
+    background-color: white;
+    margin-bottom: 50px;
+  }
+
+  .img-responsive {
+    max-width: 100%;
+  }
+
+  .intuitivo {
+    position: absolute;
+    right: 0;
+    margin-right: -15px;
+    margin-top: -150px;
+    width: 291px;
   }
 }
