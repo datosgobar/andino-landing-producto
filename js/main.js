@@ -9,7 +9,7 @@ $(document).ready(function() {
       triggerElement: this,
       //duration: '90%',
       //   reverse: false,
-      triggerHook: 0.8,
+      triggerHook: 0.9,
     })
       .setClassToggle(this, 'fade-in') // add class 'fade-in' to elements with class 'listen'
       // .addIndicators({
