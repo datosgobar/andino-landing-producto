@@ -127,8 +127,8 @@ PSEUDO CLASE PARA LAS LINEAS DE LOS BOTONES
   position: absolute;
   overflow: scroll;
   width: 100%;
-  height: 5000px;
   z-index: 0;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
