@@ -61,7 +61,7 @@ h2.herramientas {
 
 .button-container {
   position: relative;
-  top: 35vh;
+  bottom: -150px
   display: flex;
   flex-direction: column;
   z-index: 2;
