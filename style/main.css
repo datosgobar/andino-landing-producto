@@ -252,9 +252,15 @@ button {
 
 .centermodal {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 47%;
   transform: translate(-50%, -50%) !important;
+}
+
+.modal-dialog {
+  position: relative;
+  width: 80% !important;
+  margin: 10px;
 }
 
 .modal-button {
