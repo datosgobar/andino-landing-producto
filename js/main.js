@@ -175,7 +175,7 @@ $(document).ready(function() {
           loop: false,
           autoplay: true,
           path:
-            'https://gist.githubusercontent.com/sebasbarraud/61822a1017fea082a5b6f9a6956cab86/raw/713c21271aa047860b4ff05b19450445c4ea7161/pais.json',
+            'https://gist.githubusercontent.com/sebasbarraud/61822a1017fea082a5b6f9a6956cab86/raw/8b36620dd0384499a5afd4b1c1c2fd404341080e/pais.json',
         })
       })
       .addTo(controller)

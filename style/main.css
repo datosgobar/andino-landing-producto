@@ -295,6 +295,11 @@ button {
   line-height: 0.6;
 }
 
+.mail-to {
+  color: #98d7f2;
+  font-weight: 500;
+}
+
 .img-rrss {
   width: 35px;
 }
@@ -309,7 +314,7 @@ button {
 
 .rrss {
   position: relative;
-  bottom: -100px;
+  margin-top: 50px;
 }
 
 /* SCROLL ANIMATIONS */
