@@ -292,12 +292,13 @@ button {
 .callto {
   color: white;
   text-align: center;
-  line-height: 0.6;
+  line-height: 1.2 !important;
 }
 
 .mail-to {
   color: #98d7f2;
   font-weight: 500;
+  
 }
 
 .img-rrss {
