@@ -18,29 +18,104 @@ $(document).ready(function() {
       .addTo(controller)
   })
 
-  // button's section implementation
-  let triggerElements = ['#sec0', '#sec1', '#sec2', '#sec3', '#sec4', '#sec5']
-  let buttons = [
-    '#button-cero',
-    '#button-one',
-    '#button-two',
-    '#button-three',
-    '#button-four',
-    '#button-five',
-  ]
-  let durations = ['100%', '400%', '100%', '100%', '100%', '100%']
+  // // button's section implementation
+  // let triggerElements = ['#sec0', '#sec1', '#sec2', '#sec3', '#sec4', '#sec5']
+  // let buttons = [
+  //   '#button-cero',
+  //   '#button-one',
+  //   '#button-two',
+  //   '#button-three',
+  //   '#button-four',
+  //   '#button-five',
+  // ]
+  // let durations = ['100%', '400%', '100%', '100%', '100%', '100%']
 
-  for (let i = 0; i < triggerElements.length; i++) {
+  // for (let i = 0; i < triggerElements.length; i++) {
+  //   new ScrollMagic.Scene({
+  //     triggerElement: triggerElements[i],
+  //     duration: durations[i],
+  //   })
+  //     .setClassToggle(buttons[i], 'active') // add class 'active' to button-one
+  //     // .addIndicators({
+  //     //   name: triggerElements[i],
+  //     // })
+  //     .addTo(controller)
+  // }
+
+  // NEW SCROLL
+
+  $('.main-container').each(function() {
     new ScrollMagic.Scene({
-      triggerElement: triggerElements[i],
-      duration: durations[i],
+      triggerElement: '#sec0',
+      duration: '100%',
     })
-      .setClassToggle(buttons[i], 'active') // add class 'active' to button-one
+      .setClassToggle('#button-cero', 'active') // add class 'active' to button-one
       // .addIndicators({
-      //   name: triggerElements[i],
+      //   name: 'triggerElements',
       // })
       .addTo(controller)
-  }
+  })
+
+  $('#sec1').each(function() {
+    new ScrollMagic.Scene({
+      triggerElement: '#sec1',
+      duration: 3600,
+    })
+      .setClassToggle('#button-one', 'active') // add class 'active' to button-one
+      // .addIndicators({
+      //   name: 'triggerElements',
+      // })
+      .addTo(controller)
+  })
+
+  $('#sec2').each(function() {
+    new ScrollMagic.Scene({
+      triggerElement: '#sec2',
+      duration: 900,
+    })
+      .setClassToggle('#button-two', 'active') // add class 'active' to button-one
+      // .addIndicators({
+      //   name: 'triggerElements',
+      // })
+      .addTo(controller)
+  })
+
+  $('#sec3').each(function() {
+    new ScrollMagic.Scene({
+      triggerElement: '#sec3',
+      duration: 900,
+    })
+      .setClassToggle('#button-three', 'active') // add class 'active' to button-one
+      // .addIndicators({
+      //   name: 'triggerElements',
+      // })
+      .addTo(controller)
+  })
+
+  $('#sec4').each(function() {
+    new ScrollMagic.Scene({
+      triggerElement: '#sec4',
+      duration: 1550,
+    })
+      .setClassToggle('#button-four', 'active') // add class 'active' to button-one
+      // .addIndicators({
+      //   name: 'triggerElements',
+      // })
+      .addTo(controller)
+  })
+
+  $('#sec5').each(function() {
+    new ScrollMagic.Scene({
+      triggerElement: '#sec5',
+      duration: 900,
+    })
+      .setClassToggle('#button-five', 'active') // add class 'active' to button-one
+      // .addIndicators({
+      //   name: 'triggerElements',
+      // })
+      .addTo(controller)
+  })
+  // NEW SCROLL
 
   // loop through each .listen element
   // PRIMERA ANIMACION
