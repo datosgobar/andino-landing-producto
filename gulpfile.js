@@ -35,7 +35,7 @@ gulp.task('sass', () => {
 
 gulp.task('optimize', () => {
   gulp
-    .src('img/*')
+    .src('./style/*')
     .pipe(imagemin())
     .pipe(gulp.dest('app/img'))
 })

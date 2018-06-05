@@ -7,7 +7,19 @@ html {
 .modal-backdrop {
   display: none;
 }
-
+.bg-section {
+  width: 100vw;
+  height: 900px;
+  background-color: white;
+  transition: all ease-in-out 300ms;
+}
+.full-height {
+  height: 100%;
+}
+.center-vertical {
+  display: flex;
+  align-items: center;
+}
 .modal {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -60,8 +72,8 @@ h2.herramientas {
 }
 
 .button-container {
-  position: relative;
-  bottom: -150px;
+  position: absolute;
+  bottom: 250px;
   display: flex;
   flex-direction: column;
   z-index: 2;
@@ -143,12 +155,6 @@ button {
   background-size: cover;
 }
 
-.bg-section {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
-
 .bg-section-tools {
   width: 100vw;
   background-color: white;
@@ -165,6 +171,12 @@ button {
 
 .container-fluid {
   margin-left: 210px;
+}
+
+.main-title {
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
 }
 
 .content {
@@ -185,14 +197,6 @@ button {
   margin-bottom: 60px !important;
 }
 
-.vh65 {
-  margin-top: 65vh;
-}
-
-.vh40 {
-  margin-top: 40vh;
-}
-
 .andino-main {
   max-width: 450px;
 }
@@ -201,7 +205,6 @@ button {
   position: absolute;
   right: 0;
   margin-right: -15px;
-  margin-top: 15vh;
 }
 
 .mt75 {
@@ -228,7 +231,11 @@ button {
   text-align: center;
   display: block;
   margin: auto;
-  margin-top: 7vh;
+  margin-top: 40px;
+}
+
+.first-center-title {
+  margin-top: 120px;
 }
 
 .center-img-no-margin {
@@ -298,7 +305,6 @@ button {
 .mail-to {
   color: #98d7f2;
   font-weight: 500;
-  
 }
 
 .img-rrss {
@@ -424,10 +430,21 @@ video::-webkit-media-controls-current-time-display {
 .modal {
   font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 }
+
+.empezar {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* video {
   width: 100% !important;
   height: auto !important;
 } */
+
+/* TRANSITIONS */
+.desktop {
+  transition: all ease-in-out 300ms;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1422px) {
@@ -448,6 +465,15 @@ video::-webkit-media-controls-current-time-display {
 }
 
 @media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .bg-section {
+    height: 800px;
+  }
+  h1 {
+    font-size: 30px;
+  }
   .container-fluid {
     margin: auto;
   }
@@ -468,9 +494,6 @@ video::-webkit-media-controls-current-time-display {
   }
   .navbar-default .navbar-nav > li > a {
     color: #073f69 !important;
-  }
-  .vh30 {
-    margin-top: 30vh;
   }
   .vh20 {
     margin-top: 20vh;
@@ -496,5 +519,14 @@ video::-webkit-media-controls-current-time-display {
     margin-right: -15px;
     margin-top: -150px;
     width: 291px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg-section {
+    height: 800px;
+  }
+  .main-title {
+    top: 70%;
   }
 }
