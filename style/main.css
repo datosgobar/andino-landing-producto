@@ -34,7 +34,7 @@ h6 {
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 300;
   color: white;
 }
 
@@ -51,7 +51,7 @@ h3 {
 h4 {
   font-weight: 300;
   color: #777777;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 h2.herramientas {
@@ -100,7 +100,7 @@ h2.herramientas {
   color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 30px;
   text-align: center;
   max-width: 185px;
@@ -473,6 +473,7 @@ video::-webkit-media-controls-current-time-display {
   }
   h1 {
     font-size: 30px;
+    font-weight: 300 !important; 
   }
   .container-fluid {
     margin: auto;
